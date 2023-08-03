@@ -22,7 +22,7 @@ namespace EmailCalendarsClient.MailSender
             {
                 emailClient.Connect(Domain, int.Parse(Port));
 
-                emailClient.Authenticate(Username, "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");
+                emailClient.Authenticate(Username, Hash);
 
                 emailClient.Send(message);
 
